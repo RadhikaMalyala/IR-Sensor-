@@ -13,7 +13,7 @@ pinMode(led, OUTPUT);
 
 void loop()
 {
-if (digitalWrite(ir_sensor)== HIGH)
+if (digitalRead(ir_sensor)== HIGH)
 { 
 digitalWrite(buzzer, HIGH);
 delay(3000); 
