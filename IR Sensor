@@ -1,19 +1,28 @@
-#define ir sensor = 2; 
-#define buzzer = 3; 
-#define relay=4;
-#define led=5;
+#define ir sensor  2
+#define buzzer  3
+#define relay 4
+#define led 5
 
-void setup(){
-pinMode(2, INPUT);
-pinMode(3, OUTPUT);
-PinMode(4, OUTPUT);
-PinMode(5, OUTPUT);
+void setup()
+{
+pinMode(ir sensor, INPUT);
+pinMode(buzzer, OUTPUT);
+PinMode(relay, OUTPUT);
+PinMode(led, OUTPUT);
 }
 
-void loop(){
-if (digitalWrite(2)== HIGH) 
-digitalWrite(3, HIGH);
+void loop()
+{
+if (digitalWrite(ir sensor)== HIGH)
+{ 
+digitalWrite(buzzer, HIGH);
 delay(3000); 
-digitalWrite(4,HIGH);
-digitalWrite(5,HIGH);
+digitalWrite(relay,HIGH);
+digitalWrite(led,HIGH);
+}
+else{
+digitalWrite(buzzer,LOW);
+digitalWrite(relay,LOW);
+digitalWrite(led,LOW);
+}
 }
