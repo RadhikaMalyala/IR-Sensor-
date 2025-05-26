@@ -1,19 +1,19 @@
-#define ir sensor  2
+#define ir_sensor  2
 #define buzzer  3
 #define relay 4
 #define led 5
 
 void setup()
 {
-pinMode(ir sensor, INPUT);
+pinMode(ir_sensor, INPUT);
 pinMode(buzzer, OUTPUT);
-PinMode(relay, OUTPUT);
-PinMode(led, OUTPUT);
+pinMode(relay, OUTPUT);
+pinMode(led, OUTPUT);
 }
 
 void loop()
 {
-if (digitalWrite(ir sensor)== HIGH)
+if (digitalWrite(ir_sensor)== HIGH)
 { 
 digitalWrite(buzzer, HIGH);
 delay(3000); 
