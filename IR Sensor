@@ -1,7 +1,8 @@
 #define ir sensor = 2; 
 #define buzzer = 3; 
 #define relay=4;
-#define led=5; 
+#define led=5;
+
 void setup(){
 pinMode(2, INPUT);
 pinMode(3, OUTPUT);
