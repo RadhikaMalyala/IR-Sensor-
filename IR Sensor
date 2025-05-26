@@ -1,4 +1,4 @@
-#define IR sensor = 2; 
+#define ir sensor = 2; 
 #define buzzer = 3; 
 #define relay=4;
 #define led=5; 
@@ -7,12 +7,12 @@ void setup()
 pinMode(2, INPUT);
 pinMode(3, OUTPUT);
 PinMode(4, OUTPUT);
-PinMode (5, OUTPUT);
+PinMode(5, OUTPUT);
 }
 
 void loop() 
 {
-if (digital Write(2)== HIGH) 
+if (digitalWrite(2)== HIGH) 
 digitalWrite(3, HIGH);
 delay(3000); 
 digitalWrite(4,HIGH);
